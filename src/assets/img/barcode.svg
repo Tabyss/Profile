@@ -1,0 +1,35 @@
+<svg width="400" height="40" version="1.1"
+   xmlns="http://www.w3.org/2000/svg">
+
+   <g id="barcode" fill={fill}>
+      <rect x="0" y="0" width="303" height="177" fill="#000000" />
+      <rect x="0.00" y="0.00" width="6.00" height="150.00" />
+      <rect x="9.00" y="0.00" width="3.00" height="150.00" />
+      <rect x="18.00" y="0.00" width="3.00" height="150.00" />
+      <rect x="33.00" y="0.00" width="3.00" height="150.00" />
+      <rect x="42.00" y="0.00" width="12.00" height="150.00" />
+      <rect x="57.00" y="0.00" width="3.00" height="150.00" />
+      <rect x="66.00" y="0.00" width="3.00" height="150.00" />
+      <rect x="75.00" y="0.00" width="6.00" height="150.00" />
+      <rect x="93.00" y="0.00" width="3.00" height="150.00" />
+      <rect x="99.00" y="0.00" width="3.00" height="150.00" />
+      <rect x="108.00" y="0.00" width="3.00" height="150.00" />
+      <rect x="114.00" y="0.00" width="6.00" height="150.00" />
+      <rect x="132.00" y="0.00" width="3.00" height="150.00" />
+      <rect x="141.00" y="0.00" width="3.00" height="150.00" />
+      <rect x="156.00" y="0.00" width="6.00" height="150.00" />
+      <rect x="165.00" y="0.00" width="6.00" height="150.00" />
+      <rect x="174.00" y="0.00" width="6.00" height="150.00" />
+      <rect x="183.00" y="0.00" width="12.00" height="150.00" />
+      <rect x="198.00" y="0.00" width="3.00" height="150.00" />
+      <rect x="204.00" y="0.00" width="12.00" height="150.00" />
+      <rect x="222.00" y="0.00" width="3.00" height="150.00" />
+      <rect x="231.00" y="0.00" width="12.00" height="150.00" />
+      <rect x="246.00" y="0.00" width="3.00" height="150.00" />
+      <rect x="255.00" y="0.00" width="3.00" height="150.00" />
+      <rect x="264.00" y="0.00" width="6.00" height="150.00" />
+      <rect x="279.00" y="0.00" width="9.00" height="150.00" />
+      <rect x="291.00" y="0.00" width="3.00" height="150.00" />
+      <rect x="297.00" y="0.00" width="6.00" height="150.00" />
+   </g>
+</svg>

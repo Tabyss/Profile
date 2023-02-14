@@ -1,0 +1,74 @@
+.nav {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-family: var(--font-2);
+  background: linear-gradient(-90deg, #000000 0%, rgb(0, 0, 0) 100%);
+  mix-blend-mode: difference;
+  backdrop-filter: blur(3px);
+  &__body {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    a {
+      padding: 5px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--body);
+      .logo{
+        transition: all 0.1s ease-in-out;
+      }
+      &:hover {
+          .logo {
+            transform: rotate(-90deg);
+          }
+      }
+    }
+  }
+}
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav__menu {
+    a {
+      display: none;
+    }
+  }
+
+  .burger {
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    appearance: none;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    & span {
+      background-color: var(--body);
+      height: 1px;
+      width: 25px;
+      transition: 0.3s;
+    }
+    &.active span {
+      &:nth-child(1) {
+        transform: translate(0px, 2px) rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        transform: translate(0px, -4px) rotate(-45deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:relative;
+    bottom: 0;
+    font-family: var(--font-2)
+}
+
+.foot__copy{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 5% 20px;
+    width: 40%;
+    background-color: var(--primary);
+    color: #fff;
+    gap: 10px;
+    
+}
+
+.foot__copy i{
+    text-transform: uppercase;
+    font-style: 'normal';
+    font-weight: 400;
+}
+
+.foot__logo{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+.foot__logo h1{
+    font-size: 3rem;
+    font-family: var(--font-1);
+    text-transform: uppercase;
+}
+
+.foot__contact{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.foot__social{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 5%;
+}
