@@ -1,35 +1,30 @@
-<svg width="400" height="40" version="1.1"
-   xmlns="http://www.w3.org/2000/svg">
-
-   <g id="barcode" fill={fill}>
-      <rect x="0" y="0" width="303" height="177" fill="#000000" />
-      <rect x="0.00" y="0.00" width="6.00" height="150.00" />
-      <rect x="9.00" y="0.00" width="3.00" height="150.00" />
-      <rect x="18.00" y="0.00" width="3.00" height="150.00" />
-      <rect x="33.00" y="0.00" width="3.00" height="150.00" />
-      <rect x="42.00" y="0.00" width="12.00" height="150.00" />
-      <rect x="57.00" y="0.00" width="3.00" height="150.00" />
-      <rect x="66.00" y="0.00" width="3.00" height="150.00" />
-      <rect x="75.00" y="0.00" width="6.00" height="150.00" />
-      <rect x="93.00" y="0.00" width="3.00" height="150.00" />
-      <rect x="99.00" y="0.00" width="3.00" height="150.00" />
-      <rect x="108.00" y="0.00" width="3.00" height="150.00" />
-      <rect x="114.00" y="0.00" width="6.00" height="150.00" />
-      <rect x="132.00" y="0.00" width="3.00" height="150.00" />
-      <rect x="141.00" y="0.00" width="3.00" height="150.00" />
-      <rect x="156.00" y="0.00" width="6.00" height="150.00" />
-      <rect x="165.00" y="0.00" width="6.00" height="150.00" />
-      <rect x="174.00" y="0.00" width="6.00" height="150.00" />
-      <rect x="183.00" y="0.00" width="12.00" height="150.00" />
-      <rect x="198.00" y="0.00" width="3.00" height="150.00" />
-      <rect x="204.00" y="0.00" width="12.00" height="150.00" />
-      <rect x="222.00" y="0.00" width="3.00" height="150.00" />
-      <rect x="231.00" y="0.00" width="12.00" height="150.00" />
-      <rect x="246.00" y="0.00" width="3.00" height="150.00" />
-      <rect x="255.00" y="0.00" width="3.00" height="150.00" />
-      <rect x="264.00" y="0.00" width="6.00" height="150.00" />
-      <rect x="279.00" y="0.00" width="9.00" height="150.00" />
-      <rect x="291.00" y="0.00" width="3.00" height="150.00" />
-      <rect x="297.00" y="0.00" width="6.00" height="150.00" />
-   </g>
+<svg width="484" height="35" viewBox="0 0 484 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.58384 0H0V44H9.58384V0Z" fill="#000000"/>
+<path d="M19.1683 0H14.376V44H19.1683V0Z" fill="#000000"/>
+<path d="M33.5448 0H28.7524V44H33.5448V0Z" fill="#000000"/>
+<path d="M62.2972 0H52.7134V44H62.2972V0Z" fill="#000000"/>
+<path d="M81.4656 0H67.0894V44H81.4656V0Z" fill="#000000"/>
+<path d="M100.634 0H95.8418V44H100.634V0Z" fill="#000000"/>
+<path d="M110.218 0H105.426V44H110.218V0Z" fill="#000000"/>
+<path d="M129.386 0H119.802V44H129.386V0Z" fill="#000000"/>
+<path d="M153.347 0H148.554V44H153.347V0Z" fill="#000000"/>
+<path d="M162.932 0H158.14V44H162.932V0Z" fill="#000000"/>
+<path d="M177.308 0H172.516V44H177.308V0Z" fill="#000000"/>
+<path d="M191.683 0H182.099V44H191.683V0Z" fill="#000000"/>
+<path d="M215.644 0H210.852V44H215.644V0Z" fill="#000000"/>
+<path d="M230.02 0H225.228V44H230.02V0Z" fill="#000000"/>
+<path d="M258.773 0H249.189V44H258.773V0Z" fill="#000000"/>
+<path d="M273.149 0H263.565V44H273.149V0Z" fill="#000000"/>
+<path d="M287.525 0H277.941V44H287.525V0Z" fill="#000000"/>
+<path d="M311.486 0H292.317V44H311.486V0Z" fill="#000000"/>
+<path d="M321.07 0H316.278V44H321.07V0Z" fill="#000000"/>
+<path d="M345.029 0H325.861V44H345.029V0Z" fill="#000000"/>
+<path d="M359.408 0H354.615V44H359.408V0Z" fill="#000000"/>
+<path d="M383.367 0H368.991V44H383.367V0Z" fill="#000000"/>
+<path d="M392.951 0H388.159V44H392.951V0Z" fill="#000000"/>
+<path d="M407.327 0H397.744V44H407.327V0Z" fill="#000000"/>
+<path d="M431.287 0H421.703V44H431.287V0Z" fill="#000000"/>
+<path d="M460.041 0H445.664V44H460.041V0Z" fill="#000000"/>
+<path d="M469.624 0H464.832V44H469.624V0Z" fill="#000000"/>
+<path d="M484.001 0H474.417V44H484.001V0Z" fill="#000000"/>
 </svg>

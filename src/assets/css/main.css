@@ -98,17 +98,6 @@
 
 }
 
-.line{
-    position: absolute;
-    background-color: var(--body);
-    bottom: 0;
-    width: 1px;
-    height: 40%;
-    transform-origin: bottom;
-    animation: line-up .5s linear  1 normal none;
-    
-}
-
 .plus{
     padding: 0;
     margin: 0;

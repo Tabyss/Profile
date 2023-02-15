@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./component/Navbar";
 import Main from "./component/Main";
 import About from "./component/About";
-import Skill from "./component/Skill";
+import Porto from "./component/Porto";
 
 function App() {
   return (
@@ -19,8 +19,7 @@ function Link() {
     <Routes>
       <Route path="/" element={<Main />}></Route>
       <Route path="about" element={<About />}></Route>
-      <Route path="skill" element={<Skill />}></Route>
-      
+      <Route path="porto" element={<Porto />}></Route>
     </Routes>
   );
 }

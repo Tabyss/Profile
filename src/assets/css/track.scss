@@ -2,10 +2,6 @@
   display: flex;
   flex-direction: column;
   padding: 30vh 0;
-
-
-  
-
   &-main {
     transition: height 0.5s ease-in-out;
     border: 1px solid var(--primary);

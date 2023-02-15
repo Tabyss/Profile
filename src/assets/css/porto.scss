@@ -1,0 +1,48 @@
+.porto{
+    display: flex;
+    flex-direction: column;
+    // padding: 11vh 0;
+    height: 100vh;
+    background-color: var(--primary);
+    .line{
+        display: block;
+        &-1{
+            width: 100vw;
+            height: 1px;
+            margin-top: 11vh;
+            background-color: var(--body);
+        }
+        &-2{
+            width: 100vw;
+            height: 1px;
+            background-color: var(--body);
+
+        }
+    }
+    &-menu{
+        height: 88vh;
+        width: 30vw;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid var(--body);
+    }
+    &-asesor{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 5vw;
+        p{
+            text-transform: uppercase;
+            font-weight: 200;
+            font-size: .8rem;
+            font-family: var(--font-2);
+            color: var(--body);
+        }
+        span{
+            display: flex;
+            width: 30vw;
+            height: 1px;
+            background-color: var(--body);
+        }
+    }
+}

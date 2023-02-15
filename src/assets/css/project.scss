@@ -107,7 +107,6 @@
             width: 410px;
             object-fit: cover;
             filter: invert(100%);
-            transform: scale(1.2);
             transition: all 0.3s ease-in-out;
         }
         &:hover{
@@ -115,7 +114,6 @@
                 padding-left: 10px;
             }
             .img_mate{
-                transform: scale(1);
                 filter: invert(0%);
             }
         }
