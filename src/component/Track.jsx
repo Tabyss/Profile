@@ -21,7 +21,7 @@ const history = [
         keyword: "Associate's degree",
         grade: [
           {
-            add: "3.67",
+            add: "GPA : 3.67",
           },
         ],
       },
@@ -71,51 +71,52 @@ const history = [
     ],
   },
 ];
-function Track() {
-  const [open, setOpen] = useState("1");
-  const active = (e) => {
-    setOpen(e.target.id || 0);
-  };
-  if(active == 0){
-    setOpen()
-  }
-  console.log(open)
+
+function Experience({ edu }) {
+  const [open, setOpen] = useState(false);
   return (
-    <div className="track">
-      {history.map((edu, i) => {
-        return (
-          <div key={i} id={edu.no} onClick={active} className={open ? "track-main active" : "track-main close"}>
-            <div className="track-title">
-            <div>
-              <h2>{edu.no}</h2>
-              <h1>{edu.name}</h1>
-            </div>
-              <i >
-                <BsPlusCircle className="icon" />
-              </i>
-            </div>
-            <div className= "track-content">
-              {edu.list.map((hand, i) => (
-                <div key={i} className="trk-main">
-                  <span className="trk-line"></span>
-                  <div className="trk-content">
-                    <p>
-                      {hand.year} - {hand.till}
-                    </p>
-                    <h1>{hand.title}</h1>
-                    <h2>{hand.keyword}</h2>
-                    {hand.grade?.map((li, i) => (
-                      <div key={i}>
-                        <li>{li.add}</li>
-                      </div>
-                    ))}
-                  </div>
+    <div
+      onClick={() => setOpen(!open)}
+      className={open ? "track-main active" : "track-main close"}
+    >
+      <div className="track-title">
+        <div>
+          <h2>0{edu.no}</h2>
+          <h1>{edu.name}</h1>
+        </div>
+        <i>
+          <BsPlusCircle className="icon" />
+        </i>
+      </div>
+      <div className="track-content">
+        {edu.list.map((hand, i) => (
+          <div key={i} className="trk-main">
+            <span className="trk-line"></span>
+            <div className="trk-content">
+              <p>
+                {hand.year} - {hand.till}
+              </p>
+              <h1>{hand.title}</h1>
+              <h2>{hand.keyword}</h2>
+              {hand.grade?.map((li, i) => (
+                <div key={i}>
+                  <li>{li.add}</li>
                 </div>
               ))}
             </div>
           </div>
-        );
-      })}
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function Track() {
+  return (
+    <div className="track">
+      {history.map((edu, i) => (
+        <Experience key={i} edu={edu} />
+      ))}
     </div>
   );
 }

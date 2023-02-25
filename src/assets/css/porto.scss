@@ -1,48 +1,98 @@
-.porto{
-    display: flex;
-    flex-direction: column;
-    // padding: 11vh 0;
-    height: 100vh;
-    background-color: var(--primary);
-    .line{
-        display: block;
-        &-1{
-            width: 100vw;
-            height: 1px;
-            margin-top: 11vh;
-            background-color: var(--body);
-        }
-        &-2{
-            width: 100vw;
-            height: 1px;
-            background-color: var(--body);
+.porto {
+  display: flex;
+  flex-direction: column;
+  // padding: 11vh 0;
+  height: 100vh;
+  background-color: var(--primary);
 
+  .line {
+    display: block;
+    &-1 {
+      width: 100vw;
+      height: 1px;
+      margin-top: 11vh;
+      background-color: var(--body);
+    }
+    &-2 {
+      width: 100vw;
+      height: 1px;
+      background-color: var(--body);
+    }
+  }
+  &-menu {
+    align-items: center;
+    overflow: auto;
+    flex-direction: row;
+    height: 80vh;
+    white-space: nowrap;
+  }
+  &-option {
+    display: inline-block;
+    margin: 10px;
+    font-family: var(--font-2);
+    height: 75vh;
+    overflow: hidden;
+    .option {
+      &-image {
+        height: 50vh;
+        .image-option {
+          height: 50vh;
+          width: 25vw;
+          object-fit: cover;
+          object-position: 50% 50%;
         }
-    }
-    &-menu{
-        height: 88vh;
-        width: 30vw;
-        padding: 10px;
-        margin: 10px;
-        border: 1px solid var(--body);
-    }
-    &-asesor{
+      }
+      &-header {
         display: flex;
+        flex-direction: column;
+        height: 25vh;
+        background-color: var(--body);
         justify-content: end;
-        align-items: center;
-        gap: 5vw;
-        p{
+        &-main {
+          padding: 10px 10px;
+          p{
             text-transform: uppercase;
-            font-weight: 200;
-            font-size: .8rem;
-            font-family: var(--font-2);
-            color: var(--body);
+          }
+          h1{
+            font-family: var(--font-1);
+            font-weight: 900;
+          }
+          h2{
+            font-weight: 300;
+          }
         }
-        span{
-            display: flex;
-            width: 30vw;
-            height: 1px;
-            background-color: var(--body);
+        &-comp {
+          display: flex;
+          height: 15vh;
+          justify-content: end;
+          align-items: end;
         }
+      }
     }
+  }
+  &-asesor {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5vw;
+    p {
+      text-transform: uppercase;
+      font-weight: 200;
+      font-size: 0.8rem;
+      font-family: var(--font-2);
+      color: var(--body);
+    }
+    span {
+      display: flex;
+      width: 30vw;
+      height: 1px;
+      background-color: var(--body);
+    }
+  }
+  &-image {
+    object-fit: cover;
+    // size: 88vh;
+    width: 100%;
+    height: 50%;
+  }
 }
