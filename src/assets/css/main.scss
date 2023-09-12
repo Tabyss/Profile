@@ -181,11 +181,11 @@
     &__body {
       &__profile {
         &__title {
-          &__first {
-            font-size: 2.5rem;
-          }
-          &__last {
-            font-size: 2.5rem;
+          &__first, &__middle, &__last{
+            h1{
+              font-size: 2.5rem;
+              padding: 5px 0;
+            }
           }
         }
       }
