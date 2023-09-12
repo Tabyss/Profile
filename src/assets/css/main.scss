@@ -7,52 +7,101 @@
   padding: 5vh 3vw;
   background-color: var(--body);
   &__body {
-    display: block;
     &__profile {
       display: flex;
       justify-content: space-between;
       &__title {
-        &__first {
-          padding: 0 10px;
+        &__first,
+        &__middle,
+        &__last {
+          display: flex;
+          position: relative;
           width: fit-content;
-          font-weight: 400;
-          font-size: 5rem;
-          text-transform: uppercase;
-          font-family: var(--font-1);
-          color: var(--body);
-          background-color: var(--primary);
+          margin: 5px;
+          h1 {
+            display: flex;
+            position: relative;
+            font-weight: 400;
+            font-size: 5rem;
+            text-transform: uppercase;
+            font-family: var(--font-1);
+            color: var(--primary);
+            line-height: 30px;
+            padding: 20px 0;
+            opacity: 0;
+            
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0;
+            background-color: var(--primary);
+          }
+        }
+        &__first {
+          h1 {
+            animation: opa-text 0.1s forwards;
+            animation-delay: 8.4s;
+          }
+          &::after{
+            animation: lineEffect 1s forwards;
+            animation-delay: 8s;
+          }
+        }
+        &__middle {
+          h1 {
+            animation: opa-text 0.1s forwards;
+            animation-delay: 8.8s;
+          }
+          &::after{
+            animation: lineEffect 1s forwards;
+            animation-delay: 8.4s;
+          }
         }
         &__last {
-          font-size: 5rem;
-          font-weight: 500;
-          font-family: var(--font-1);
-          color: var(--primary);
+          h1 {
+            animation: opa-text 0.1s forwards;
+            animation-delay: 9.2s;
+          }
+          &::after{
+            animation: lineEffect 1s forwards;
+            animation-delay: 8.8s;
+          }
         }
       }
       &__nav {
-        overflow: hidden;
         &__list {
-          font-family: var(--font-2);
-          position: relative;
-          font-weight: 400;
-          text-transform: uppercase;
-          text-decoration: none;
-          color: var(--primary);
-          cursor: pointer;
-          &::before {
-            content: "";
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: var(--primary);
-            height: 2px;
-            transition: all 0.2s ease-in-out;
-            transform: translateX(100%);
-          }
-          &:hover {
+          display: flex;
+          gap: 5px;
+          a {
+            display: flex;
+            position: relative;
+            font-family: var(--font-2);
+            font-size: 0.9rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--primary);
+            overflow: hidden;
+            cursor: pointer;
             &::before {
-              transform: translateX(0);
+              content: "";
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              width: 100%;
+              background-color: var(--primary);
+              height: 2px;
+              transition: all 0.2s ease-in-out;
+              transform: translateX(100%);
+            }
+            &:hover {
+              &::before {
+                transform: translateX(0);
+              }
             }
           }
         }
@@ -68,19 +117,23 @@
       text-transform: uppercase;
       font-family: var(--font-2);
       color: var(--primary);
+      padding: 0 2px;
     }
     a {
       display: flex;
       font-size: 0.9rem;
       text-transform: uppercase;
       text-decoration: underline;
+      justify-content: center;
       font-family: var(--font-2);
       color: var(--primary);
+      padding: 0 2px;
       position: relative;
-      width: 210px;
+      width: 215px;
       z-index: 1;
       overflow: hidden;
       transition: all 0.3s ease-in-out;
+
       &::before {
         content: "";
         position: absolute;
@@ -147,7 +200,7 @@
         align-items: end;
         &__first {
           font-family: var(--font-1);
-          font-size: 2.5rem;
+          font-size: 2rem;
           line-height: 6vh;
         }
         &__last {
@@ -175,5 +228,29 @@
 
   .barcode {
     height: 20px;
+  }
+}
+
+@keyframes lineEffect {
+  0% {
+    left: 0;
+    width: 0;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0;
+  }
+}
+
+@keyframes opa-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
   }
 }

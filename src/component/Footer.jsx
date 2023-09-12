@@ -18,16 +18,16 @@ function Footer() {
           <a href="mailto:shabbahatha86@gmail.com">shabbahatha86@gmail.com</a>
         </div>
         <div className="foot__info__social">
+          <div className="foot__info__social__2">
+            <a>GitHub</a>
+            <a href="https://www.linkedin.com/in/thabys/">LinkedIn</a>
+          </div>
           <div className="foot__info__social__1">
             <a href="https://instagram.com/thabys?igshid=MzMyNGUyNmU2YQ==">
               Instagram
             </a>
             <a href="https://www.behance.net/Thabys">Behance</a>
             <a href="https://dribbble.com/Thabys">Dribbble</a>
-          </div>
-          <div className="foot__info__social__2">
-            <a>GitHub</a>
-            <a href="https://www.linkedin.com/in/thabys/">LinkedIn</a>
           </div>
         </div>
       </div>

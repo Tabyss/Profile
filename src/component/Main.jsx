@@ -4,22 +4,33 @@ import { useEffect } from "react";
 import { mainLoad } from "../animation";
 
 function Main() {
+  useEffect(() => {
+    mainLoad();
+  },[]);
   return (
     <>
       <div className="main">
         <div className="main__body">
           <div className="main__body__profile">
             <div className="main__body__profile__title">
-              <h1 className="main__body__profile__title__first">creative</h1>
-              <h2 className="main__body__profile__title__last">
-                web developer
-              </h2>
-              <h2 className="main__body__profile__title__last">& Designer</h2>
+              <div className="main__body__profile__title__first">
+                <h1>creative</h1>
+              </div>
+              <div className="main__body__profile__title__middle">
+                <h1>web developer</h1>
+              </div>
+              <div className="main__body__profile__title__last">
+                <h1>& Designer</h1>
+              </div>
             </div>
             <div className="main__body__profile__nav">
-              <a className="main__body__profile__nav__list" href="#">
-                About
-              </a>
+              <div className="main__body__profile__nav__list">
+                <a href="#">About</a>
+                <p>/</p>
+                <a href="#">Skill</a>
+                <p>/</p>
+                <a href="#">Contact</a>
+              </div>
             </div>
           </div>
         </div>

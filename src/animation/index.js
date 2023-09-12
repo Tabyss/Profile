@@ -73,7 +73,6 @@ export const preLoad = () => {
       duration: 1,
       css: { overflowY: "auto" },
       ease: "power3.easeOut",
-      
     })
     .to(".preload", {
       duration: 0,
@@ -83,32 +82,27 @@ export const preLoad = () => {
 };
 
 export const mainLoad = () => {
-  tl.from(
-    ".main__body__profile__title__first, .main__body__profile__title__last",
-    {
-      y: 100,
+  tl.from(".main__identity__name__first,  .main__identity__name__last", {
+    x: 20,
+    opacity: 0,
+    duration: 1,
+    delay: 0,
+    ease: "power3.easeInOut",
+  })
+    .from(".main__body__profile__nav", {
+      y: -200,
       opacity: 0,
-      duration: 1,
-      delay: 0,
-      ease: Expo.easeIn,
-      onComplete: preLoad(),
-    }
-  )
-    .from(".main__identity__name__first", {
-      y: 100,
-      opacity: 0,
-      duration: 1,
-      delay: 0,
+      duration: 0.5,
       ease: Expo.easeIn,
     })
-    .from(
-      ".main__body__profile__nav, .main__btn, .main__identity__name__last",
-      {
-        x: 600,
-        opacity: 0,
-        duration: 1,
-        delay: 0,
-        ease: Expo.easeIn,
-      }
-    );
+    .from(".main__btn", {
+      x: 20,
+      opacity: 0,
+      ease: "power3.easeInOut",
+    })
+    .from(".Logo", {
+      opacity: 0,
+      duration: 1.5,
+      ease: "power3.easeInOut",
+    });
 };

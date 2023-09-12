@@ -15,7 +15,7 @@ export const slide = [
   },
   {
     id: 2,
-    title: "The Secta",
+    title: "Sky Beach",
     image: college3,
     alt: "Secta",
     year: "2020",
@@ -29,14 +29,14 @@ export const slide = [
   },
   {
     id: 4,
-    title: "To Be Peace",
+    title: "Groceroad",
     image: college2,
     alt: "Peace",
     year: "2019",
   },
   {
     id: 5,
-    title: "To Be Peace",
+    title: "Park.in",
     image: frame2,
     alt: "Peace",
     year: "2019",
