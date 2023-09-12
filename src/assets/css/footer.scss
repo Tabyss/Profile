@@ -1,0 +1,134 @@
+.foot {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  bottom: 0;
+  width: 100vw;
+  font-family: var(--font-2);
+  &__copy {
+    display: flex;
+    padding: 60px 5vw;
+    background-color: var(--primary);
+    color: #fff;
+    gap: 10px;
+    &__logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+      h1 {
+        font-size: 3rem;
+        font-family: var(--font-1);
+        text-transform: uppercase;
+      }
+      i {
+        text-transform: uppercase;
+        font-style: "normal";
+        font-weight: 400;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: fit-content;
+    gap: 40px;
+    padding: 20px 3vw;
+    h3{
+      font-size: 1.4rem;
+    }
+    a{
+      color: var(--primary);
+      text-decoration: none;
+    }
+    &__contact {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      h3 {
+        font-family: var(--font-1);
+      }
+      a {
+        font-weight: 500;
+        font-family: var(--font-2);
+        text-transform: uppercase;
+      }
+      
+    }
+    &__social {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      &__1, &__2 {
+        display: flex;
+        gap: 20px;
+        width: auto;
+        a {
+          overflow: hidden;
+          position: relative;
+          font-family: var(--font-1);
+          font-size: 2rem;
+          &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: var(--primary);
+            height: 2px;
+            transition: all 0.5s ease-in-out;
+            transform: translateX(-100%);
+          }
+          &:hover {
+            &::before {
+              transform: translateX(0);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .foot {
+    flex-direction: column;
+    &__copy {
+      padding: 20px 2vw;
+      justify-content: center;
+      .logoput {
+        width: 50px;
+      }
+      &__logo {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+      i {
+        font-size: 0.6rem;
+      }
+    }
+    &__info {
+      display: flex;
+      width: 100vw;
+      flex-direction: column;
+      gap: 30px;
+      padding: 5vh 3vw;
+      &__contact{
+        flex-direction: column;
+        align-items: center;
+      }
+      &__social {
+        align-items: center;
+      gap: 20px;
+        &__1, &__2{
+          align-items: center;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

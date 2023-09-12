@@ -1,0 +1,20 @@
+.modals {
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  &::before {
+    content: "";
+    background-color: #000;
+    opacity: 0.5;
+  }
+  &-contain {
+    position: relative;
+    margin:50% 0;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    h1 {
+    }
+  }
+}

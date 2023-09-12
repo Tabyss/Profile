@@ -1,0 +1,179 @@
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding: 5vh 3vw;
+  background-color: var(--body);
+  &__body {
+    display: block;
+    &__profile {
+      display: flex;
+      justify-content: space-between;
+      &__title {
+        &__first {
+          padding: 0 10px;
+          width: fit-content;
+          font-weight: 400;
+          font-size: 5rem;
+          text-transform: uppercase;
+          font-family: var(--font-1);
+          color: var(--body);
+          background-color: var(--primary);
+        }
+        &__last {
+          font-size: 5rem;
+          font-weight: 500;
+          font-family: var(--font-1);
+          color: var(--primary);
+        }
+      }
+      &__nav {
+        overflow: hidden;
+        &__list {
+          font-family: var(--font-2);
+          position: relative;
+          font-weight: 400;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: var(--primary);
+          cursor: pointer;
+          &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: var(--primary);
+            height: 2px;
+            transition: all 0.2s ease-in-out;
+            transform: translateX(100%);
+          }
+          &:hover {
+            &::before {
+              transform: translateX(0);
+            }
+          }
+        }
+      }
+    }
+  }
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    p {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      font-family: var(--font-2);
+      color: var(--primary);
+    }
+    a {
+      display: flex;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      text-decoration: underline;
+      font-family: var(--font-2);
+      color: var(--primary);
+      position: relative;
+      width: 210px;
+      z-index: 1;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: var(--primary);
+        height: 20px;
+        transition: all 0.3s ease-in-out;
+        width: calc(100% + 2px);
+        z-index: -1;
+        transform: translateX(100%);
+      }
+      &:hover {
+        color: var(--body);
+        &::before {
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+  &__identity {
+    display: flex;
+    justify-content: space-between;
+    .Logo {
+      height: 10vh;
+    }
+    &__name {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      &__first {
+        font-family: var(--font-1);
+        font-size: 4rem;
+        line-height: 6vh;
+      }
+      &__last {
+        text-transform: uppercase;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 3vh 3vw;
+    &__body {
+      &__profile {
+        &__title {
+          &__first {
+            font-size: 2.5rem;
+          }
+          &__last {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+    &__identity {
+      .Logo {
+        height: 8vh;
+      }
+      &__name {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        &__first {
+          font-family: var(--font-1);
+          font-size: 2.5rem;
+          line-height: 6vh;
+        }
+        &__last {
+          text-transform: uppercase;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .main__first {
+    margin-top: 200px;
+    font-size: 3rem;
+    line-height: 50px;
+  }
+
+  .main__last {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+
+  .btn {
+    transform-origin: right;
+    transform: scale(0.7);
+  }
+
+  .barcode {
+    height: 20px;
+  }
+}

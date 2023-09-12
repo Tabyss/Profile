@@ -1,0 +1,54 @@
+.nav {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-family: var(--font-2);
+  background: linear-gradient(-90deg, #000000 0%, rgb(0, 0, 0) 100%);
+  mix-blend-mode: difference;
+  backdrop-filter: blur(3px);
+  &__body {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    a {
+      padding: 5px 15px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: var(--body);
+      .logo{
+        transition: all 0.1s ease-in-out;
+      }
+      &:hover {
+        .logo {
+
+            transform: rotate(-90deg);
+          }
+      }
+    }
+  }
+  &__decor{
+    display: flex;
+    align-items: center;
+    .line1{
+      display: flex;
+      width: 50vw;
+      height: 1px;
+      background-color: var(--body);
+    }
+    .line2{
+      display: flex;
+      width: 1.5px;
+      height: 1.5vh;
+      background-color: var(--body);
+    }
+  }
+}

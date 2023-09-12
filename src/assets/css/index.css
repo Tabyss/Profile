@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@font-face {
+  font-family: nofex;
+  src: url(../font/Nofex.otf);
+}
+
+:root{
+  --font-1: nofex;
+  --font-2: 'Roboto', sans-serif;
+  --body : #fff;
+  --primary : #000;
+  --secondary : #d9d9d9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-2);
+}
+
+::-webkit-scrollbar{
+  display: none;
+  overflow: hidden;
+  overflow-y: scroll;
+}

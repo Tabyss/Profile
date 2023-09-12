@@ -1,0 +1,14 @@
+.preload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary);
+    z-index: 10;
+    &__logo{
+        display: flex;
+        gap: 1px;
+    }
+}
