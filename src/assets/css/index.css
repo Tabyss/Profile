@@ -1,16 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
 @font-face {
   font-family: nofex;
   src: url(../font/Nofex.otf);
 }
 
-:root{
+@font-face {
+  font-family: articulat-bold;
+  src: url(../font/ARTICULATCF-BOLD.TTF);
+}
+
+@font-face {
+  font-family: articulat-bold-extra;
+  src: url(../font/ARTICULATCF-EXTRABOLD.TTF);
+}
+
+@font-face {
+  font-family: articulat-heavy;
+  src: url(../font/ARTICULATCF-HEAVY.TTF);
+}
+
+@font-face {
+  font-family: articulat-normal;
+  src: url(../font/ARTICULATCF-NORMAL.TTF);
+}
+
+@font-face {
+  font-family: articulat-medium;
+  src: url(../font/ARTICULATCF-MEDIUM.TTF);
+}
+
+:root {
   --font-1: nofex;
-  --font-2: 'Roboto', sans-serif;
-  --body : #fff;
-  --primary : #000;
-  --secondary : #d9d9d9;
+  --font-2: 'articulat-normal', sans-serif;
+  --font-2-medium: 'articulat-medium', sans-serif;
+  --font-2-bold: 'articulat-bold', sans-serif;
+  --font-2-bold-extra: 'articulat-bold-extra', sans-serif;
+  --font-2-heavy: 'articulat-heavy', sans-serif;
+  
+  --body: #fff;
+  --primary: #000;
+  --secondary: #d9d9d9;
 }
 
 * {
@@ -20,7 +48,7 @@
   font-family: var(--font-2);
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
   overflow: hidden;
   overflow-y: scroll;

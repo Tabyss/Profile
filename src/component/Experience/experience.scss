@@ -1,0 +1,157 @@
+.experi {
+  width: 100vw;
+  height: 100vh;
+  padding: 0 20px;
+  &-title {
+    h1 {
+      font-family: var(--font-1);
+      font-size: 6rem;
+    }
+  }
+  &-main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    &-item {
+      display: flex;
+      width: 100%;
+      &.n {
+        &-1 {
+          margin-top: -100px;
+          justify-content: end;
+        }
+        &-2 {
+          margin-top: -150px;
+          justify-content: center;
+        }
+        &-3 {
+          margin-top: -150px;
+          justify-content: start;
+        }
+      }
+      &-menu {
+        &-face {
+          position: relative;
+          width: 31vw;
+          height: 400px;
+          border: 1px solid var(--primary);
+          transition: transform 0.6s;
+          transform-style: preserve-3d;
+          &-front,
+          &-back {
+            position: absolute;
+            padding: 20px;
+            height: 100%;
+            width: 100%;
+            backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+          }
+          &-front {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            z-index: 2;
+            img {
+              width: 50px;
+            }
+            &-title {
+              display: flex;
+              flex-direction: column;
+              align-items: end;
+              width: 100%;
+              h1 {
+                font-size: 2.2rem;
+                font-family: var(--font-1);
+              }
+              h2 {
+                font-family: var(--font-2);
+              }
+              &-key {
+                display: flex;
+                gap: 5px;
+                margin-top: 5px;
+                p {
+                  text-transform: uppercase;
+                  font-size: 0.8rem;
+                  font-family: var(--font-2);
+                  padding: 0 5px;
+                  border: 1px solid var(--primary);
+                  border-radius: 10px;
+                }
+              }
+            }
+          }
+          &-back {
+            background-color: var(--primary);
+            z-index: 1;
+            transform: rotateY(180deg);
+            img {
+              height: 50px;
+            }
+            p {
+              margin: 50% 0;
+              font-family: var(--font-2);
+              text-transform: uppercase;
+              text-align: justify;
+              color: var(--body);
+            }
+          }
+        }
+        &:hover .experi-main-item-menu-face,
+        &:focus .experi-main-item-menu-face {
+          transform: rotateY(180deg);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .experi {
+    &-title {
+      margin-bottom: 5vh;
+      h1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 3rem;
+      }
+    }
+    &-main {
+      gap: 5vh;
+      &-item {
+        &.n {
+          &-1 {
+            margin-top: 0;
+            justify-content: center;
+          }
+          &-2 {
+            margin-top: 0;
+            justify-content: center;
+          }
+          &-3 {
+            margin-top: 0;
+            justify-content: center;
+          }
+        }
+        &-menu {
+          width: 100%;       
+          &-face {   
+            width: 100%; 
+            &-front {
+              &-title {
+                h1 {
+                  font-size: 1.8rem;
+                }
+                h2 {
+                  font-size: .95rem;
+                }
+              }
+            }      
+          }
+        }
+      }
+    }
+  }
+}

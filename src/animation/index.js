@@ -1,6 +1,7 @@
 import { Expo, gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin();
+gsap.registerPlugin(ScrollTrigger);
 
 const tl = gsap.timeline();
 
@@ -81,28 +82,17 @@ export const preLoad = () => {
     });
 };
 
-export const mainLoad = () => {
-  tl.from(".main__identity__name__first,  .main__identity__name__last", {
-    x: 20,
-    opacity: 0,
-    duration: 1,
-    delay: 0,
-    ease: "power3.easeInOut",
-  })
-    .from(".main__body__profile__nav", {
-      y: -200,
-      opacity: 0,
-      duration: 0.5,
-      ease: Expo.easeIn,
-    })
-    .from(".main__btn", {
-      x: 20,
-      opacity: 0,
-      ease: "power3.easeInOut",
-    })
-    .from(".Logo", {
-      opacity: 0,
-      duration: 1.5,
-      ease: "power3.easeInOut",
-    });
+export const divider = () => {
+  tl.to(".divider-about", {
+    backgroundColor: "#fff",
+    color: "#000",
+    scrollTrigger: {
+      trigger: ".divider-about",
+      start: "top 0",
+      end: "bottom 0",
+      toggleClass: "active",
+      pin: true,
+      scrub: true,
+    },
+  });
 };

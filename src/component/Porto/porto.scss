@@ -1,0 +1,109 @@
+.porto {
+    font-family: var(--font-2);
+    background-color: var(--body);
+    gap: 10vw;
+    padding: 20vh 3vw;
+    margin-top: 50vh;
+    &-base {
+      display: flex;
+      flex-direction: column;
+      &-title {
+        h2 {
+          display: flex;
+          font-family: var(--font-1);
+          font-size: 4rem;
+        }
+      }
+      &-caption {
+        margin: 1vh 0;
+        display: flex;
+        justify-content: space-between;
+        P {
+          width: 35vw;
+          text-align: end;
+          font-size: 0.8rem;
+          text-transform: uppercase;
+        }
+        button {
+          font-size: 2rem;
+          padding: 10px 10px 4px;
+          border: none;
+          border: 1px solid var(--body);
+          color: var(--body);
+          background-color: var(--primary);
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            background-color: var(--body);
+          }
+        }
+      }
+    }
+    &-load {
+      margin: 10vh 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto auto;
+      grid-gap: 0.6em;
+      grid-row-gap: 10rem;
+      &-card {
+        display: flex;
+        &-image {
+          width: 100%;
+        }
+        &-caption {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          p {
+            font-family: var(--font-2);
+          }
+        }
+        &1 {
+          grid-area: 1 / 1 / span 1 / span 5;
+        }
+        &2 {
+          grid-area: 1 / 10 / span 1 / span 3;
+        }
+        &3 {
+          grid-area: 2 / 1 / span 1 / span 4;
+        }
+        &4 {
+          grid-area: 2 / 6 / span 1 / span 3;
+        }
+        &5 {
+          grid-area: 2 / 9 / span 1 / span 5;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .porto {
+      padding: 40vh 3vw;
+      flex-direction: column;
+      &-base {
+        gap: 0;
+        &-caption{
+          margin: 10px 0;
+          gap: 40px;
+          flex-direction: column-reverse;
+          justify-content: flex-start;
+        }
+        h2 {
+          font-size: 2.5rem;
+        }
+        p {
+          width: 100%;
+          text-align: justify;
+        }
+      }
+      &-load{
+        display: flex;
+        gap: 10vh;
+        margin: 5vh 0;
+        flex-direction: column;
+      }
+    }
+  }
